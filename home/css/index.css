@@ -1,0 +1,574 @@
+@font-face {
+    font-family: 'CDMyingbit';
+    src: url('./font/CDMyingbit.eot');
+    src: url('./font/CDMyingbit.eot?#iefix') format('embedded-opentype'), url('./font/CDMyingbit.woff') format('woff'), url('./font/CDMyingbit.ttf') format('truetype'), url('./font/CDMyingbit.svg#CDMyingbit') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: "微软雅黑";
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/hero-default-51707a6b437e2eba13b19a3361e66ab0.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #D0E9ED;
+    background-attachment: fixed;
+    width: 100%;
+    height: 640px;
+    overflow-x: hidden;
+    min-width: 360px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav a:link {
+    color: #202020;
+}
+
+#nav a:visited {
+    color: #202020;
+}
+
+#nav a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.mokuai a:link {
+    color: #fff;
+}
+
+.mokuai a:visited {
+    color: #fff;
+}
+
+.mokuai h2 a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+/*整体框*/
+
+.wrap {
+    position: relative;
+    width: 100%;
+}
+
+
+/*页面头部*/
+
+#head {
+    position: relative;
+    width: 100%;
+}
+
+
+/*头部文字*/
+
+.toptext {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    color: #000;
+    text-align: center;
+}
+
+.toptext h1 {
+    font-size: 4em;
+    font-weight: 900;
+}
+
+
+/*导航栏*/
+
+#nav {
+    position: relative;
+    left: 50%;
+    margin-left: -185px;
+    width: 414px;
+}
+
+#nav li {
+    display: inline-block;
+    margin: 20px;
+}
+
+.nav-left, .nav-right, #logo {
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+
+#logo {
+    transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.4s ease-in-out;
+    -moz-transition: transform 0.4s ease-in-out;
+}
+
+#logo:hover {
+    transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+#main {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+/*主页中间框开始*/
+
+#content {
+    position: relative;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    width: 48.7%;
+    padding-bottom: 20px;
+}
+
+.mokuai {
+    position: relative;
+    margin: 5px;
+    background: #fff;
+    width: 250px;
+    height: 200px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.w {
+    width: 250px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'CDMyingbit';
+    margin: 5px;
+}
+
+.picture img {
+    width: 250px;
+    height: 120px;
+}
+
+
+/*模块标题*/
+
+.mokuai h3 {
+    position: relative;
+    top: -55px;
+    left: 15px;
+    font-weight: 200;
+}
+
+
+/*模块内容简介*/
+
+.mokuai p {
+    position: absolute;
+    top: 120px;
+    overflow: hidden;
+    margin: 15px;
+    color: #bdbdbd;
+}
+
+.mokuai a {
+    display: block;
+}
+
+
+/*主页中间框结束*/
+
+
+/*博客列表,成员列表*/
+
+.list-group {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    width: 25%;
+}
+
+.badge {
+    color: #bdbdbd;
+    background: #fff;
+}
+
+
+/*时间轴开始*/
+
+#time {
+    position: relative;
+    display: none;
+    margin: 0 auto;
+    width: 700px;
+    height: 736px;
+}
+
+#circle, .point b {
+    box-sizing: content-box;
+}
+
+
+/*上下按钮*/
+
+#arrow {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+}
+
+#arrow ul li {
+    background: url(../img/icons.png);
+    width: 20px;
+    height: 20px;
+}
+
+#arrow #up {
+    background-position: 0 -26px;
+    margin-bottom: 10px;
+}
+
+#history {
+    width: 700px;
+    height: 736px;
+}
+
+
+/*时间轴头部*/
+
+#title {
+    position: relative;
+    top: 8%;
+    text-indent: 5%;
+    height: 95px;
+}
+
+#title h2 {
+    color: #7c7c7c;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 15px;
+}
+
+#circle {
+    color: #b0b0b0;
+    border: 6px solid rgba(0, 0, 0, 0.15);
+    border-radius: 95px;
+    display: inline-block;
+    text-align: center;
+    width: 83px;
+    height: 83px;
+}
+
+
+/*圆形中的年份显示 */
+
+#year {
+    margin-top: 22px;
+    margin-left: 5px;
+    height: 28px;
+}
+
+#year span {
+    background-image: url(../img/date.png);
+    width: 18px;
+    height: 24px;
+    float: left;
+}
+
+#one {
+    background-position: 0px -48px;
+}
+
+#two {
+    background-position: 0px 0px;
+}
+
+#three {
+    background-position: 0px -24px;
+}
+
+#four {
+    background-position: 0px -120px;
+}
+
+#yeartext {
+    font-size: 18px;
+}
+
+
+/*时间轴列表*/
+
+#his-content {
+    position: relative;
+    top: 60px;
+    background: url(../img/vertical.png) no-repeat 234px 2px;
+    padding-top: 20px;
+    overflow: hidden;
+    width: 700px;
+    height: 442px;
+}
+
+.list {
+    overflow: hidden;
+    margin-top: 0px;
+    height: 450px
+}
+
+.list li {
+    position: relative;
+    vertical-align: bottom;
+    overflow: hidden;
+    height: 165px;
+}
+
+.list-wrap {
+    margin-top: 28px;
+    height: 55px;
+}
+
+.list-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    line-height: 55px;
+    width: 190px;
+    height: 55px;
+}
+
+.list-year {
+    font-size: 12px;
+    color: #aeaeae;
+    margin-right: 10px;
+}
+
+.date {
+    font-size: 18px;
+    color: #aeaeae;
+}
+
+.point {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background: url(../img/point.png) no-repeat 8px 18px;
+    width: 55px;
+    height: 55px;
+}
+
+.point b {
+    position: absolute;
+    top: 0;
+    left: 9px;
+    display: block;
+    background: #fff;
+    border: 2px solid #6bc30d;
+    border-radius: 18px;
+    margin: 17px 0 0 19px;
+    width: 16px;
+    height: 16px;
+}
+
+.now .point b {
+    border: 7px solid rgba(107, 195, 13, 0.6);
+    margin: 12px 0px 0px 14px;
+    border-radius: 52px;
+}
+
+.list-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: left;
+    width: 420px;
+    height: 55px;
+}
+
+.tt {
+    color: #747474;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.td {
+    font-size: 16px;
+    color: #6e6e6e;
+}
+
+
+/*时间轴结束*/
+
+
+/*尾部*/
+
+footer {
+    width: 100%;
+    height: 138px;
+    background-color: #111;
+}
+
+footer > p {
+    text-align: center;
+    line-height: 36px;
+    color: #9e9e9e;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+footer a {
+    color: #9e9e9e;
+}
+
+footer a:hover {
+    border-bottom: 1px solid #bdbdbd;
+}
+
+@media screen and (max-width: 1023px) {
+    #main {
+        width: 85%;
+    }
+    #content {
+        width: 100%;
+    }
+    .list-group {
+        display: none;
+    }
+    .mokuai{
+        width: 80%;
+        height: 400px;
+    }
+    .picture img{
+        width: 100%;
+        height: 350px;
+    }
+    .mokuai p{
+        top: 350px;
+    }
+}
+
+@media screen and (min-width: 530px) and (max-width: 640px) {
+    #content, #main {
+        display: block;
+    }
+    .w {
+        width: 100%;
+    }
+    .mokuai, .picture img {
+        width: 100%;
+        height: 300px;
+    }
+    .mokuai {
+        height: 350px;
+    }
+    .mokuai p {
+        top: 300px;
+    }
+    #time {
+        top: 222px;
+        width: 500px;
+    }
+    #arrow {
+        right: 10px;
+    }
+    #history {
+        width: 500px;
+    }
+    #his-content {
+        background: url(../img/vertical.png) no-repeat 214px 2px;
+        width: 500px;
+    }
+    .list-left {
+        width: 180px;
+    }
+    .point {
+        left: 180px;
+    }
+    .list-right {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    #content, #main {
+        display: block;
+    }
+    #nav {
+        margin-left: -112px;
+        width: 234px;
+    }
+    #nav li {
+        margin: 5px;
+    }
+    #logo img {
+        width: 50px;
+    }
+    .w {
+        width: 100%;
+    }
+    .mokuai, .picture img {
+        width: 100%;
+        height: 200px;
+    }
+    .mokuai {
+        height: 250px;
+        margin: 10px;
+    }
+    .mokuai p {
+        top: 200px;
+        margin: 15px;
+    }
+    #time {
+        top: 222px;
+        width: 300px;
+    }
+    #arrow {
+        top: 85%;
+        right: 10px;
+    }
+    #title {
+        text-indent: 0;
+    }
+    #title h2 {
+        margin: 0;
+    }
+    #history {
+        width: 300px;
+    }
+    #his-content {
+        background: url(../img/vertical.png) no-repeat 134px 2px;
+        width: 300px;
+    }
+    .list-left {
+        width: 100px;
+    }
+    .point {
+        left: 100px;
+    }
+    .list-right {
+        width: 120px;
+    }
+}

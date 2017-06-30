@@ -1,0 +1,29 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 210;
+    width: 100%;
+    /*background: rgba(250,250,250,0.5);*/
+}
+
+.header img {
+    width: 5%;
+    min-width: 36px;
+    margin: 0;
+}
+
+.header .nav {
+    display: inline-block;
+    width: 80%;
+}
+
+.header .nav span {
+    display: inline-block;
+    height: 100%;
+    color: #EAA1A1;
+    background: rgba(210, 198, 190, 0.4);
+    font-family: "微软雅黑";
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;;
+}

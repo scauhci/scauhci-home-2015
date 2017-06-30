@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="mdl-js">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="../material/css/material.min.css">
+    <link rel="stylesheet" type="text/css" href="../material/css/icon.css">
+    <link rel="stylesheet" type="text/css" href="./style/blogStyle.css">
+    <title>HCI博客</title>
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?3a7006086d6554ba10380598ad37f1ee";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <!-- Top row, always visible -->
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title"><a href="../"><img id="navlogo" style="height: 42px;"
+                                                              src="./img/hcilogo.png"/></a>&nbsp;&nbsp;HCI博客</span>
+
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+            mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="waterfall-exp">
+                    <i class="material-icons">search</i>
+                </label>
+
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                           id="waterfall-exp"/>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title hci-title">博客</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#">博客</a>
+            <a class="mdl-navigation__link" href="../">首页</a>
+            <a class="mdl-navigation__link" href="../act/">活动</a>
+            <a class="mdl-navigation__link" href="../hci.html">HCI简介</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="mdl-grid">
+            <div id="classify" class="mdl-cell mdl-cell--4-col mdl-typography--text-center">
+                <nav class="mdl-navigation hci-list">
+                    <a class="mdl-button mdl-js-button mdl-js-ripple-effect" href="#">空</a>
+                </nav>
+            </div>
+            <div id="article" class="mdl-cell mdl-cell--8-col">
+                <div id="showarticle">
+                    <button id="returnbutton" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                        <i class="material-icons">arrow_back</i>
+                    </button>
+                    <div id="content" class="demo-blog__posts mdl-grid">
+                        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__media mdl-color-text--grey-50">
+                                <h3>On the road again</h3>
+                            </div>
+                            <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+                                <div class="minilogo"></div>
+                                <div>
+                                    <strong>wbc</strong>
+                                    <span>2 days ago</span>
+                                </div>
+                                <div class="section-spacer"></div>
+                            </div>
+                            <div id="context" class="mdl-color-text--grey-700 mdl-card__supporting-text">
+                                hci
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="articlelist" class="mdl-layout__tab-panel is-active">
+                    <section id="preview" class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+                            <i class="material-icons">play_circle_filled</i>
+                        </header>
+                        <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+                            <div class="mdl-card__supporting-text">
+                                <h4>HCI博客</h4>
+                                <span></span>
+                            </div>
+                            <div class="mdl-card__actions">
+                                <a href="javascript:void(0);" class="mdl-button">查看详情</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div id="goToTop">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" title="返回顶部">
+                    <i class="material-icons">expand_less</i>
+                </button>
+            </div>
+        </div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo"></div>
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="../">©HCI-SCAU 2015</a></li>
+                </ul>
+                <ul class="mdl-mini-footer__link-list">
+                    <li>Powered by HCIFE Supported by <a href="http://wubocong.com">Warrior!</a>,lu,cccc,hhy,pan</li>
+                </ul>
+            </div>
+        </footer>
+    </main>
+</div>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="../material/js/material.min.js"></script>
+<script src="../js/picview.js"></script>
+<script src="../js/blogScript.js"></script>
+</body>
+</html>

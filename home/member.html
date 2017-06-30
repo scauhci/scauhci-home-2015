@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" type="text/css" href="./css/member.css">
+    <link rel="stylesheet" type="text/css" href="../material/css/material.min.css">
+    <link rel="stylesheet" type="text/css" href="../material/css/icon.css">
+    <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="./material/js/material.min.js"></script>
+    <title>HCI - 龙吟虎啸</title>
+    <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "//hm.baidu.com/hm.js?3a7006086d6554ba10380598ad37f1ee";
+                var s = document.getElementsByTagName("script")[0]; 
+                s.parentNode.insertBefore(hm, s);
+            })();
+    </script>
+</head>
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+<div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--waterfall">
+        <!-- Top row, always visible -->
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title"><a href="../"><img id="navlogo" style="height: 42px;"
+                                                              src="./img/hcilogo.png"/></a>&nbsp;&nbsp;HCI活动</span>
+
+            <div class="mdl-layout-spacer"></div>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+            mdl-textfield--floating-label mdl-textfield--align-right">
+                <label class="mdl-button mdl-js-button mdl-button--icon"
+                       for="inputname">
+                    <i class="material-icons">search</i>
+                </label>
+
+                <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" id="inputname" placeholder="搜索成员" type="text" name="sample"/>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">活动</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="../blog/">博客</a>
+            <a class="mdl-navigation__link" href="../">首页</a>
+            <a class="mdl-navigation__link" href="#">活动</a>
+            <a class="mdl-navigation__link" href="../hci.html">HCI简介</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <button id="returnbutton" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" title="返回顶部">
+            <i class="material-icons">arrow_back</i>
+        </button>
+        <div>
+            <p id="searchtext"></p>
+            <hr/>
+        </div>
+        <div id="pep" class="mdl-grid">
+            <div class="demo-card-square mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+                <div class="mdl-card__title mdl-card--expand">
+                    <h2 class="mdl-card__title-text">Update</h2>
+                    <strong class="mdl-card__title-text">aspect</strong>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenan convallis.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                        查看详情
+                    </a>
+                </div>
+            </div>
+            <div id="goToTop">
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect" title="返回顶部">
+                    <i class="material-icons">expand_less</i>
+                </button>
+            </div>
+        </div>
+        <hr/>
+        <footer>
+            <p>&copy;HCI-SCAU 2015</p>
+            <p>Powered by HCIFE Supported by <a href="http://wubocong.com">Warrior!</a>,lu,cccc,hhy,pan</p>
+        </footer>
+    </main>
+</div>
+<script src="./js/member.js"></script>
+</body>
+</html>
